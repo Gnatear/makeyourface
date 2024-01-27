@@ -8,7 +8,7 @@ public class homePage : MonoBehaviour
     
     public void PlayGame(){
 
-        SceneManagement.LoadSceneAsync(1);
+        SceneManager.LoadSceneAsync(1);
 
     }
 
