@@ -26,7 +26,8 @@ public class PlayerController : MonoBehaviour
     
     private Vector2 lookPos;
 
-    private float xRotation = 0f;
+    public float xRotation = 0f;
+    public float yRotation = 0f;
 
     public float xSens = 30f;
 
@@ -88,9 +89,8 @@ public class PlayerController : MonoBehaviour
 
     public void playerlook()
     {
-        xRotation = (lookPos.y * Time.deltaTime) * ySens;
-        xRotation = Mathf.Clamp(xRotation, -80f, 80f);
-
+        xRotation -= (lookPos.y * Time.deltaTime) * ySens;
+        xRotation = Mathf.Clamp(xRotation, -40f, 10f);
         cam.transform.localRotation = Quaternion.Euler(xRotation, 0, 0);
         
         transform.Rotate(Vector3.up * (lookPos.x * Time.deltaTime) * xSens);
