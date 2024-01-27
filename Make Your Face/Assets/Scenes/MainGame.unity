@@ -482,7 +482,7 @@ Transform:
   m_GameObject: {fileID: 1132679898}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 1.5, z: 14}
+  m_LocalPosition: {x: 0, y: 1.5, z: 14.06}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -586,9 +586,10 @@ MonoBehaviour:
   jumpForce: 2
   cam: {fileID: 1534546209}
   xRotation: 12
-  yRotation: 1
+  gunXRotion: 0
   xSens: 100
   ySens: 100
+  gunTransform: {fileID: 0}
 --- !u!143 &1132679905
 CharacterController:
   m_ObjectHideFlags: 0
@@ -710,14 +711,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1148984335}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.7071068, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: 0.265, y: 0.131, z: 1.79}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0.7071068, w: 0}
+  m_LocalPosition: {x: 0.368, y: -0.023, z: 1.381}
   m_LocalScale: {x: 0.49999988, y: 1, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1216835478}
   m_Father: {fileID: 1132679902}
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 180}
 --- !u!1 &1211891757
 GameObject:
   m_ObjectHideFlags: 0
@@ -1102,7 +1103,7 @@ Transform:
   m_GameObject: {fileID: 1534546206}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: -0.02, y: 1.4300001, z: -0.010000229}
+  m_LocalPosition: {x: -0.02, y: 0.647, z: -0.046}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
