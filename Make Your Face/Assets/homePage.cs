@@ -12,4 +12,10 @@ public class homePage : MonoBehaviour
 
     }
 
+    public void QuitGame(){
+
+        Application.Quit();
+
+    }
+
 }
