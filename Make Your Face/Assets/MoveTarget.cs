@@ -31,17 +31,9 @@ public class MoveTarget : MonoBehaviour
 
     public bool ResetTarget()
     {
+
         initialSpeed = Random.Range(5f, 10f); 
-        int counter = 1;
-        if(ResetTarget()){
-
-            for(counter = 1; counter < 10000000; counter++){
-
-                initialSpeed = Random.Range(5f * counter, 10f * counter); 
-
-            }
-
-        }
+        
         transform.position = new Vector3(Random.Range(wallLeft.position.x, wallRight.position.x), transform.position.y, Random.Range(wallTop.position.z, wallBottom.position.z));
 
         return true;
