@@ -359,14 +359,15 @@ MonoBehaviour:
   - {fileID: 2800000, guid: db8fe88cc267547acb8297a5a5192e27, type: 3}
   - {fileID: 2800000, guid: abffec9040ff24a28bb8428a17425eea, type: 3}
   - {fileID: 2800000, guid: d1e532632602b4b36bdbae050543c41a, type: 3}
+  - {fileID: 2800000, guid: f32d8339b73994b53b30092f849658d7, type: 3}
   - {fileID: 2800000, guid: 3ee5f900cfacb4ed39fa87d94ebac4e5, type: 3}
   - {fileID: 2800000, guid: c1bb1acc8079949c0af9794b105d6416, type: 3}
   - {fileID: 2800000, guid: ac112a73f99a24c0baf2a975977ba035, type: 3}
   - {fileID: 2800000, guid: 34fa983a351e74a00a476f8a5ba66213, type: 3}
-  - {fileID: 2800000, guid: a3fbc1233a031403bac029daba4c1858, type: 3}
+  - {fileID: 2800000, guid: 5fb22be59b14d430fa0309273c294eed, type: 3}
   - {fileID: 2800000, guid: aa3d4af02080b4f839129a723d4d74a6, type: 3}
-  wallStickerPrefab: {fileID: 1568395479065250452, guid: a738469dc64224f1583d49b6c12fde60,
-    type: 3}
+  - {fileID: 2800000, guid: a3fbc1233a031403bac029daba4c1858, type: 3}
+  wallStickerPrefab: {fileID: 0}
   stickerMaterial: {fileID: 0}
 --- !u!114 &220823549
 MonoBehaviour:
