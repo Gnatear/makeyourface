@@ -61,12 +61,12 @@ public class wall : MonoBehaviour
         // Create the new material
         Texture2D textureFromRawImage = null;
         textureFromRawImage = rawImage.texture as Texture2D;
-        Material newMaterial = new Material(Shader.Find("Standard"));
-        newMaterial.mainTexture = textureFromRawImage;
+        Material newMaterial = new Material(Shader.Find("Unlit/Transparent"));
+        newMaterial.mainTexture = rawImage.texture;
         
         //Create the sticker
         var sticker = Instantiate(wallStickerPrefab, stickerPosition, Quaternion.Euler(stickerRotationX, stickerRotationY, stickerRotationZ));
         Renderer stickerRender = sticker.GetComponent<Renderer>();
-        stickerRender.material.SetTexture("_BaseMap" ,textureFromRawImage);
+        stickerRender.material = newMaterial;
     }
 }
