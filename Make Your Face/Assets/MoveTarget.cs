@@ -29,10 +29,10 @@ public class MoveTarget : MonoBehaviour
         transform.position = newPosition;
     }
 
-    public void ResetTarget()
+    public bool ResetTarget()
     {
         initialSpeed = Random.Range(5f, 10f); 
-        int counter == 1;
+        int counter = 1;
         if(ResetTarget()){
 
             for(counter = 1; counter < 10000000; counter++){
@@ -42,7 +42,9 @@ public class MoveTarget : MonoBehaviour
             }
 
         }
-        transform.position = new Vector3(Random.Range(wallLeft.position.x, wallRight.position.x), transform.position.y, Random.Range(wallFront.position.z, wallBack.position.z));
+        transform.position = new Vector3(Random.Range(wallLeft.position.x, wallRight.position.x), transform.position.y, Random.Range(wallTop.position.z, wallBottom.position.z));
+
+        return true;
     }
-    }
+    
 }
