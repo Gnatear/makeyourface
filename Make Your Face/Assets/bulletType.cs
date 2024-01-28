@@ -9,6 +9,7 @@ public class bulletType : MonoBehaviour
     public List<Texture2D> imageList = new List<Texture2D>();
     private int currentImageIndex = 0;
     public GameObject wallStickerPrefab;
+    
 
     public Material stickerMaterial;
     // Start is called before the first frame update
@@ -38,6 +39,7 @@ public class bulletType : MonoBehaviour
             // }
 
             currentImage.texture = imageList[n];
+
         }
     }
 }
