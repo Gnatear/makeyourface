@@ -546,11 +546,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aec59744f17fd40a4930806b11adf338, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
-  wall_left: {fileID: 1048566879}
-  wall_right: {fileID: 83079818}
-  wall_front: {fileID: 889826920}
-  wall_back: {fileID: 2084708823}
+  initialSpeed: 0
+  wallLeft: {fileID: 1048566879}
+  wallRight: {fileID: 83079818}
+  wallTop: {fileID: 889826920}
+  wallBottom: {fileID: 2084708823}
 --- !u!1 &889826916
 GameObject:
   m_ObjectHideFlags: 0
