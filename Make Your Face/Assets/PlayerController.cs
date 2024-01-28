@@ -28,14 +28,10 @@ public class PlayerController : MonoBehaviour
 
     public float xRotation = 0f;
     public float yRotation = 0f;
-    public float gunXRotion = 0f;
-    public float gunYRotion = 0f;
-    
+
     public float xSens = 30f;
 
     public float ySens = 30f;
-
-    public Transform gunTransform;
 
     public void onMove(InputAction.CallbackContext context)
     {
@@ -56,7 +52,6 @@ public class PlayerController : MonoBehaviour
     {
         controller = GetComponent < CharacterController>();
         Cursor.lockState = CursorLockMode.Locked;
-        gunTransform = transform.Find("Gun");
     }
 
     // Update is called once per frame
@@ -65,7 +60,6 @@ public class PlayerController : MonoBehaviour
         grounded = controller.isGrounded;
         movePlayer();
         playerlook();
-        gunLook();
     }
 
     public void movePlayer()
@@ -100,19 +94,6 @@ public class PlayerController : MonoBehaviour
         cam.transform.localRotation = Quaternion.Euler(xRotation, 0, 0);
         
         transform.Rotate(Vector3.up * (lookPos.x * Time.deltaTime) * xSens);
-    }
-
-    public void gunLook()
-    {
-        xRotation -= (lookPos.y * Time.deltaTime) * ySens;
-        yRotation -= (lookPos.x * Time.deltaTime) * xSens;
-        gunXRotion = 100 -  xRotation;
-        gunYRotion = -yRotation;
-     
-        gunXRotion = Mathf.Clamp(gunXRotion, -40f, 150);
-        
-        gunTransform.rotation = Quaternion.Euler(gunXRotion, gunYRotion, 0);
-        
     }
     
 }
