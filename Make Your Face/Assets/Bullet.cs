@@ -22,10 +22,4 @@ public class Bullet : MonoBehaviour
     
   }
 
-  private void createSticker()
-  {
-    
-  }
-
-
 }
