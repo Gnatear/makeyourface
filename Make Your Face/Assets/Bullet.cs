@@ -12,9 +12,20 @@ public class Bullet : MonoBehaviour
     Destroy(gameObject, life);
   }
 
-  private void OnCollisionEnter(Collision collision)
+  private void OnCollisionEnter(Collision other)
   {
+    Vector3 wallPos = other.transform.position;
+    float wallPosX = other.transform.position.x;
+    // Debug.Log("Hey I touch here: "+wallPosX);
+    // Debug.Log(gameObject.transform.position);
     Destroy(gameObject);
     
   }
+
+  private void createSticker()
+  {
+    
+  }
+
+
 }

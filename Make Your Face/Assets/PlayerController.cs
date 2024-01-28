@@ -108,8 +108,7 @@ public class PlayerController : MonoBehaviour
         yRotation -= (lookPos.x * Time.deltaTime) * xSens;
         gunXRotion = 100 -  xRotation;
         gunYRotion = -yRotation;
-        Debug.Log(gunXRotion);
-        
+     
         gunXRotion = Mathf.Clamp(gunXRotion, -40f, 150);
         
         gunTransform.rotation = Quaternion.Euler(gunXRotion, gunYRotion, 0);
